@@ -1,0 +1,9 @@
+name: envlab
+on:
+  workflow_dispatch:
+jobs:
+  env:
+    runs-on: ubuntu-latest
+    environment: lab-prod
+    steps:
+      - run: echo "ENV_OK=1"
