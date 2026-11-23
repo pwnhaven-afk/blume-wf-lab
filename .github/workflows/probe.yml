@@ -2,8 +2,9 @@ name: probe
 on:
   push:
     branches: [ "main" ]
+  pull_request:
 jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "EVENT=${{ github.event_name }} REF=${{ github.ref }}"
+      - run: echo "EVENT=${{ github.event_name }} REF=${{ github.ref }} HEAD=${{ github.head_ref }}"
