@@ -5,4 +5,4 @@ jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "VERSION=main"
+      - run: echo "VERSION=branch"
